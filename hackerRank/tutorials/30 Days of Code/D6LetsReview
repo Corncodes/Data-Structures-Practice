@@ -1,0 +1,39 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner sc = new Scanner(System.in);
+        
+        // Read the number of test cases (how many strings are coming)
+        int T = sc.nextInt();
+        sc.nextLine(); // Consume the leftover newline character
+
+        for (int t = 0; t < T; t++) {
+            String S = sc.nextLine();
+            String evenChars = "";
+            String oddChars = "";
+
+            // Loop through each character of the current string
+            for (int i = 0; i < S.length(); i++) {
+                if (i % 2 == 0) {
+                    // Index is even (0, 2, 4...)
+                    evenChars += S.charAt(i);
+                } else {
+                    // Index is odd (1, 3, 5...)
+                    oddChars += S.charAt(i);
+                }
+            }
+            
+            // Print the result for this specific string
+            System.out.println(evenChars + " " + oddChars);
+        }
+        
+        sc.close();
+    }
+
+        
+    
+    }
