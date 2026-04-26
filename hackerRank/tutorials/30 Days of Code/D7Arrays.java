@@ -4,7 +4,7 @@ public class D7Arrays {
     
 }
 
-//TUTORIAL by BlondieBytes
+//TUTORIAL by BlondieBytes thank you!
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
